@@ -12,7 +12,9 @@
     </div>
 
     <div class="menu">
-        <?php include 'templates/menu.php';?>
+        <div class="menu_neco">
+            <?php include 'templates/menu.php';?>
+        </div>
     </div>
 
     <p1 style="text-align: center;">Ahoj světe</p1>

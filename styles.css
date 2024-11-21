@@ -2,6 +2,7 @@
 /*headery*/
 
 h1{
+    
     text-align: center;
     font-size: 48px;
 }
@@ -21,12 +22,17 @@ h1{
 }
 
 .menu {
-    text-align: center;
+    text-align: left;
     padding: 10px 0px;
     background-color:#FFFFDD;
+    position:sticky;
+}
+.menu_neco {
+    margin-left: 100px;
 }
 
 /*linky*/
+
 a:link, a:visited {
     background-color: #339999;
     color: white;
@@ -37,5 +43,9 @@ a:link, a:visited {
   }
   
   a:hover, a:active {
-    background-color:white ;
+    color:#c4c4c4;
+    background-color:#225560 ;
+    outline-color:#225560;
+    outline-width: 2px;
+    outline-style: solid;
   }
