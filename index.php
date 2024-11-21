@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obchod s nabytkem</title>
 </head>
-<body>
-    <h1 style="color: red; text-align: center;">AHOJ AHOJ!</h1>
+<body style="background-color: #ECECEC;">
+
+    <div class="head">
+        <?php include 'templates/header.php';?>
+    </div>
+
+    <div class="menu">
+        <?php include 'templates/menu.php';?>
+    </div>
+
     <p1 style="text-align: center;">Ahoj světe</p1>
 </body>
 </html>
