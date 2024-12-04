@@ -1,3 +1,8 @@
+<?php
+// Start session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="cs">
 
@@ -27,13 +32,14 @@
     <p>ne</p>
 
 
-<!--Produkty-->
+
+
+    <!--Produkty-->
     <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
         <!--samostnatné produkty-->
         <div class="product">
             <a href="auto.png" class="clickable-image">
-                <?php include 'vypis.php';?>
-                <img src="auto.png">
+                <?php include 'vypisy/vypis_zidle.php';?>
             </a>
         </div>
 
