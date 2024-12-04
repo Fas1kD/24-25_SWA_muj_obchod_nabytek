@@ -32,11 +32,11 @@
         <!--samostnatné produkty-->
         <div class="product">
             <a href="auto.png" class="clickable-image">
-                <h3>Stůl</h3>
+                <?php include 'vypis.php';?>
                 <img src="auto.png">
-                <p class="cena">750 kč</p>
             </a>
         </div>
+
 
         <div class="product">
             <a href="auto.png" class="clickable-image">
