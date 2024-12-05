@@ -15,5 +15,6 @@
             Jméno: <?php echo $_SESSION['username']; ?>
         </div>
     <?php endif; ?>
+    <a href="logout.php">Logout</a>
 </body>
 </html>

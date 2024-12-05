@@ -28,8 +28,7 @@ session_start();
         </div>
     </div>
 
-    <p1 style="text-align: center;">Ahoj světe</p1>
-    <p>ne</p>
+    <p1 style="font-size:32px">Druhý největší prodejce nábytku ze Švédska</p1>
 
 
 
@@ -46,16 +45,14 @@ session_start();
 
         <div class="product">
             <a href="auto.png" class="clickable-image">
-                <h3>Stůl</h3>
-                <img src="auto.png">
-                <p class="cena">750 kč</p>
+                <?php include 'vypisy/vypis_stolu.php';?>
             </a>
         </div>
 
         <div class="product">
             <a href="auto.png" class="clickable-image">
                 <h3>Stůl</h3>
-                <img src="auto.png">
+                <img src="obrazky/zidle.png" alt="Obrázek produktu">
                 <p class="cena">750 kč</p>
             </a>
         </div>
@@ -63,7 +60,7 @@ session_start();
         <div class="product">
             <a href="auto.png" class="clickable-image">
                 <h3>Stůl</h3>
-                <img src="auto.png">
+                <img src="obrazky/zidle.png" alt="Obrázek produktu">
                 <p class="cena">750 kč</p>
             </a>
         </div>

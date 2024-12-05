@@ -15,7 +15,7 @@ if ($conn->connect_error){
 
 //sql dotaz
 $vybranyProdukt = 1; // Příklad: Vybrané ID produktu
-$sql = "SELECT ID_nabytek, nazev_nabytku, Cena, prodejna FROM nabytek WHERE ID_nabytek = 1";
+$sql = "SELECT ID_nabytek, nazev_nabytku, Cena, prodejna FROM nabytek WHERE ID_nabytek = 4";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
@@ -24,7 +24,7 @@ if ($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
         echo 
             "<h2>" .$row["nazev_nabytku"]. "</h2>";
-        echo '<img src="obrazky/zidle.png" alt="Obrázek produktu" ">';
+        echo '<img src="obrazky/stul.png" alt="Obrázek produktu" ">';
         echo "<h3>".$row["Cena"]." Kč</h3>";
         echo "<h4>Prodejna: ".$row["prodejna"]."</h4>";
         }

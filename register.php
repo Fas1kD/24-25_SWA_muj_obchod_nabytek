@@ -22,15 +22,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    // SQL dotaz pro vložení uživatele
-    $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
-    
-    if ($conn->query($sql) === TRUE) {
-        $_SESSION['username'] = $user;  // Uložení uživatelského jména do session
-        header('Location: index.php');  // Přesměrování na hlavní stránku
-        exit();
+    // Ověření, zda uživatel již existuje
+    $check_sql = "SELECT * FROM users WHERE username = '$user'";
+    $result = $conn->query($check_sql);
+
+    //Kontrola jestli uživatel již existuje
+    if ($result->num_rows > 0) {
+        // Uživatel již existuje
+        echo "<p style='color: red;'>Uživatel s tímto jménem již existuje. Zvolte jiné jméno.</p>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        // Vložení nového uživatele do databáze
+        $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
+        
+        if ($conn->query($sql) === TRUE) {
+            $_SESSION['username'] = $user;  // Uložení uživatelského jména do session
+            header('Location: index.php');  // Přesměrování na hlavní stránku
+            exit();
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
     }
 }
 
