@@ -7,7 +7,9 @@ session_start();
 <html lang="cs">
 
 <head>
+    <link rel="icon" type="image" href="obrazky/ekea.png">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obchod s nabytkem</title>
 </head>
@@ -51,9 +53,7 @@ session_start();
 
         <div class="product">
             <a href="auto.png" class="clickable-image">
-                <h3>Stůl</h3>
-                <img src="obrazky/zidle.png" alt="Obrázek produktu">
-                <p class="cena">750 kč</p>
+                <?php include 'vypisy/vypis_policky.php';?>
             </a>
         </div>
         

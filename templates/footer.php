@@ -6,5 +6,6 @@
 </head>
 <body>
     <h2>ne</h2>
+    <a class="two" href="podstranky/osobni_udaje.php">AHOJ</a>
 </body>
 </html>

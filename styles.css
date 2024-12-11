@@ -65,6 +65,11 @@ a:link, a:visited {
     
   }
 
+  a.two{
+    color: white;
+    background-color: #225560;
+  }
+
 
 
   /*IDK z chat bota*/
@@ -99,8 +104,6 @@ a:link, a:visited {
     font-weight: bold;
 }
 
-
-
 .clickable-image img {
     border: 4px solid #225560;
     border-radius: 10px;
@@ -128,4 +131,16 @@ main {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*responzibilita*/
+@media screen and (max-width: 800px) {
+    .user-info{
+        display: none;
+    }
+    .ekea{
+        display:none;
+    }
 }
