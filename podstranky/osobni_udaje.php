@@ -48,6 +48,7 @@
         <p>Můžeme shromažďovat následující informace:</p>
         <ul>
             <li>Jméno a příjmení</li>
+            <li style="font-size: 4px; color:gray;">Vaše hesla a jména jsou veřejně dostupná naší společností</li>
             <li>Kontaktní informace, včetně e-mailové adresy</li>
             <li>Demografické údaje, jako je PSČ, preference a zájmy</li>
             <li>Další informace relevantní pro zákaznické průzkumy a/nebo nabídky</li>
