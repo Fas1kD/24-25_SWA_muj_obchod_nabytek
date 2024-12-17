@@ -30,41 +30,45 @@ session_start();
         </div>
     </div>
 
-    <p1 style="font-size:32px">Druhý největší prodejce nábytku ze Švédska</p1>
 
 
 
 
     <!--Produkty-->
-    <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
-        <!--samostnatné produkty-->
-        <div class="product">
-            <a href="auto.png" class="clickable-image">
-                <?php include 'vypisy/vypis_zidle.php';?>
-            </a>
-        </div>
+    <div class="polozky">
+        <p1 style="font-size:32px">Druhý největší prodejce nábytku ze Švédska</p1>
+
+        <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
+            <!--samostnatné produkty-->
+            <div class="product">
+                <a href="auto.png" class="clickable-image">
+                    <?php include 'vypisy/vypis_zidle.php';?>
+                </a>
+            </div>
 
 
-        <div class="product">
-            <a href="auto.png" class="clickable-image">
-                <?php include 'vypisy/vypis_stolu.php';?>
-            </a>
-        </div>
+            <div class="product">
+                <a href="auto.png" class="clickable-image">
+                    <?php include 'vypisy/vypis_stolu.php';?>
+                </a>
+            </div>
 
-        <div class="product">
-            <a href="auto.png" class="clickable-image">
-                <?php include 'vypisy/vypis_policky.php';?>
-            </a>
-        </div>
-        
-        <div class="product">
-            <a href="auto.png" class="clickable-image">
-                <h3>Stůl</h3>
-                <img src="obrazky/zidle.png" alt="Obrázek produktu">
-                <p class="cena">750 kč</p>
-            </a>
+            <div class="product">
+                <a href="auto.png" class="clickable-image">
+                    <?php include 'vypisy/vypis_policky.php';?>
+                </a>
+            </div>
+            
+            <div class="product">
+                <a href="auto.png" class="clickable-image">
+                    <h3>Stůl</h3>
+                    <img src="obrazky/zidle.png" alt="Obrázek produktu">
+                    <p class="cena">750 kč</p>
+                </a>
+            </div>
         </div>
     </div>
+
 
 
 

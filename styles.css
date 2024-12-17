@@ -11,33 +11,57 @@ h2{
     font-size: 24px;
 }
 
+.polozky{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px 10px 0 0; /* Zaoblené rohy pouze dole */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+}
+
 /*text*/
 
 
 /*div*/
 .head {
-    margin-top: -20px;
-    padding: 10px 0px;  
-    background-color: #225560;
-    align-items: center;
-    color: white;
-    text-align: center;
+    margin: -20px  20px auto; /*mezery nahoře a dole, horizontální centrování */
+    padding: 15px 20px; 
+    background-color: #225560; 
+    border-radius: 10px; /* Zaoblené rohy */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    color: white; 
+    text-align: center; 
+    width: 100%; 
+    max-width: 1800px; /* Maximální šířka pro lepší responsivitu */
 }
 
 .footer{
-    margin-top: 50px;
-    padding: 5px 0px;
-    background-color:#225560 ;
-    align-items: center;
-    color: white;
-    text-align: center;
+    padding: 15px 20px; 
+    background-color: #225560; /* Stejná barva jako header */
+    border-radius: 10px; /* Zaoblené rohy */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    color: white; 
+    text-align: center; /* Zarovnání textu na střed */
+    width: 100%; 
+    max-width: 1800px; /*Maximální šířka*/
+    margin-left: auto; /* Vycentrování */
+    margin-right: auto; /* Vycentrování */
 }
 
 .menu {
-    text-align: left;
-    padding: 10px 0px;
-    background-color:#FFFFDD;
-    position:sticky;
+    margin: 0 auto 10px auto; /* margin nahoře (0) a dole, centrování vlevo a vpravo */
+    padding: 15px 20px; 
+    background-color: #FFFFDD; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín pro zvýraznění */
+    text-align: left; 
+    position: sticky; /*Posoubání s menu*/
+    width: 90%; /* Šířka bloku */
+    max-width: 1200px; 
+    z-index: 1000; /* Zajištění, že je nad ostatními prvky */
+    top: 0; /* pozice pro pohyb */
+    border-radius: 0 0 10px 10px; /* Zaoblené rohy pouze dole */
 }
 .menu_neco {
     margin-left: 100px;
@@ -143,4 +167,35 @@ main {
     .ekea{
         display:none;
     }
+    .tlacitka_menu{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: left; /*směrování na střed*/
+    }
+    /*Upravení headeru na "základní podobu"*/
+    .head{
+        margin: -20px 20px 0 -7px  ; 
+        padding: 15px 20px; 
+        background-color: #225560; 
+        border-radius: 0px; 
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); 
+        color: white; 
+        text-align: center; 
+        max-width: 1800px; 
+    }
+    /*Upravení menu na "základní podobu"*/
+    .menu {
+        margin: 0 auto 10px auto; 
+        padding: 15px 20px; 
+        background-color: #FFFFDD;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); 
+        text-align: left; 
+        position: relative; 
+        width: 80%; 
+        max-width: 1200px; 
+        z-index: 1000; 
+        border-radius: 0 0 10px 10px; 
+    }
+
 }
