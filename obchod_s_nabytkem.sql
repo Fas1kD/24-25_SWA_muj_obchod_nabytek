@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Počítač: 127.0.0.1
--- Vytvořeno: Stř 11. pro 2024, 12:45
+-- Vytvořeno: Stř 18. pro 2024, 11:19
 -- Verze serveru: 10.4.32-MariaDB
--- Verze PHP: 8.2.12
+-- Verze PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `nabytek` (
   `nazev_nabytku` varchar(50) NOT NULL,
   `Cena` int(11) NOT NULL,
   `prodejna` varchar(50) NOT NULL,
-  `kusu_na_sklade` float NOT NULL
+  `kusu_na_sklade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_czech_ci;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `nabytek` (
 --
 
 INSERT INTO `nabytek` (`ID_nabytek`, `nazev_nabytku`, `Cena`, `prodejna`, `kusu_na_sklade`) VALUES
-(1, 'Židle', 1499, 'Brno', 50),
+(1, 'Židle', 999, 'Brno', 50),
 (4, 'Stůl', 4999, 'Brno', 100),
 (6, 'Polička', 699, 'Praha', 120);
 
@@ -55,7 +55,7 @@ CREATE TABLE `prodejny` (
   `prodejna` varchar(50) NOT NULL,
   `produkt_ID` int(11) NOT NULL,
   `nazev_nabytku` varchar(50) NOT NULL,
-  `kusu_na_sklade` float NOT NULL
+  `kusu_na_sklade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_czech_ci;
 
 --
@@ -63,8 +63,9 @@ CREATE TABLE `prodejny` (
 --
 
 INSERT INTO `prodejny` (`ID_prodejny`, `prodejna`, `produkt_ID`, `nazev_nabytku`, `kusu_na_sklade`) VALUES
-(1, 'Brno', 1, 'Židle', 50),
-(3, 'Praha', 6, 'Polička', 120);
+(1, 'Brno', 1, 'Židle', 98),
+(3, 'Praha', 6, 'Polička', 83),
+(4, 'Brno', 4, 'Stůl', 48);
 
 --
 -- Indexy pro exportované tabulky
@@ -102,7 +103,7 @@ ALTER TABLE `nabytek`
 -- AUTO_INCREMENT pro tabulku `prodejny`
 --
 ALTER TABLE `prodejny`
-  MODIFY `ID_prodejny` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_prodejny` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Omezení pro exportované tabulky

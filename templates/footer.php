@@ -6,6 +6,6 @@
 </head>
 <body>
     <h2>ne</h2>
-    <a class="two" href="podstranky/osobni_udaje.php">AHOJ</a>
+    <a class="two" href="podstranky/osobni_udaje.php">Ochrana osobních údajů</a>
 </body>
 </html>

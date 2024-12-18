@@ -11,22 +11,29 @@ h2{
     font-size: 24px;
 }
 
-.polozky{
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px 10px 0 0; /* Zaoblené rohy pouze dole */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+h3{
+    text-align: center;
+    font-size: 36px;
 }
 
-/*text*/
+h4{
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Tabulka*/
+
+td{
+    font-size: 26px;
+}
+tr{
+    font-size: 34px;
+}
 
 
 /*div*/
 .head {
-    margin: -20px  20px auto; /*mezery nahoře a dole, horizontální centrování */
+    margin: -20px auto  auto; /*mezery nahoře a dole,  centrování */
     padding: 15px 20px; 
     background-color: #225560; 
     border-radius: 10px; /* Zaoblené rohy */
@@ -51,7 +58,7 @@ h2{
 }
 
 .menu {
-    margin: 0 auto 10px auto; /* margin nahoře (0) a dole, centrování vlevo a vpravo */
+    margin: 0 auto 30px auto; /* margin nahoře (0) a dole, centrování vlevo a vpravo */
     padding: 15px 20px; 
     background-color: #FFFFDD; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín pro zvýraznění */
@@ -95,8 +102,7 @@ a:link, a:visited {
   }
 
 
-
-  /*IDK z chat bota*/
+/*Uspořádání a styl produktů*/
 
   /*Oddělení každé položky a vypsání do řádků*/
   .product_list {
@@ -114,6 +120,16 @@ a:link, a:visited {
     width: 400px;
     text-align: center;
     align-items: center;
+}
+
+.polozky{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px 10px 0 0; /* Zaoblené rohy pouze dole */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
 }
 
 .product img {
@@ -156,6 +172,31 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+
+/*tlačítka*/
+
+button,
+button:focus {
+    margin: 2px;
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+button:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+
 
 
 

@@ -31,14 +31,12 @@ session_start();
     </div>
 
 
-
-
-
     <!--Produkty-->
     <div class="polozky">
         <p1 style="font-size:32px">Druhý největší prodejce nábytku ze Švédska</p1>
 
         <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
+
             <!--samostnatné produkty-->
             <div class="product">
                 <a href="auto.png" class="clickable-image">
@@ -58,7 +56,7 @@ session_start();
                     <?php include 'vypisy/vypis_policky.php';?>
                 </a>
             </div>
-            
+
             <div class="product">
                 <a href="auto.png" class="clickable-image">
                     <h3>Stůl</h3>
@@ -69,11 +67,7 @@ session_start();
         </div>
     </div>
 
-
-
-
-
-
+<!--Footer-->
     <div class="footer">
         <?php include 'templates/footer.php'; ?>
     </div>
