@@ -1,9 +1,9 @@
 <?php
 //připojení k MySQL databázy
-$servername = "localhost";  //název serveru
-$username = "root";         //jmeno uživatele (defaultně je "root")
-$password = "";             //heslo (pro local host je obvykle prázdné)
-$dbname = "obchod_s_nabytkem";   //název databázes
+$servername = "localhost";
+$username = "fasorad";
+$password = "Agama987.Qe23:";
+$dbname = "fasorad_obchod";
 
 //vytvoření připojení
 $conn = new mysqli($servername, $username, $password, $dbname);
