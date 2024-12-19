@@ -32,9 +32,9 @@ session_start();
         <?php
         // Připojení k databázi
         $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "obchod_s_nabytkem";
+        $username = "fasorad";
+        $password = "Agama987.Qe23:";
+        $dbname = "fasorad_obchod";
 
         // Vytvoření připojení
         $conn = new mysqli($servername, $username, $password, $dbname);
