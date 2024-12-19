@@ -3,10 +3,10 @@
 session_start();
 
 // Připojení k databázi
-$servername = "localhost";
-$username = "root";
-$password = "";  // Připojovací heslo k databázi (pokud existuje)
-$dbname = "test_db";
+$servername = "localhost";      //název serveru
+$username = "fasorad";          //jmeno uživatele (defaultně je "root")
+$password = "Agama987.Qe23:";   //heslo (pro local host je obvykle prázdné)
+$dbname = "fasorad_obchod";     //název databázes
 
 // Vytvoření připojení
 $conn = new mysqli($servername, $username, $password, $dbname);
