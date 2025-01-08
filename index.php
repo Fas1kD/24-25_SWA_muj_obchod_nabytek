@@ -39,29 +39,27 @@ session_start();
 
             <!--samostnatné produkty-->
             <div class="product">
-                <a href="auto.png" class="clickable-image">
+                <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_zidle.php';?>
                 </a>
             </div>
 
 
             <div class="product">
-                <a href="auto.png" class="clickable-image">
+                <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_stolu.php';?>
                 </a>
             </div>
 
             <div class="product">
-                <a href="auto.png" class="clickable-image">
+                <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_policky.php';?>
                 </a>
             </div>
 
             <div class="product">
-                <a href="auto.png" class="clickable-image">
-                    <h3>Stůl</h3>
-                    <img src="obrazky/zidle.png" alt="Obrázek produktu">
-                    <p class="cena">750 kč</p>
+                <a href="prodejny.php" class="clickable-image">
+                   <?php include 'vypisy/vypis_lustr.php';?>
                 </a>
             </div>
         </div>

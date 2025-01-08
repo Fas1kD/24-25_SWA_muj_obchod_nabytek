@@ -53,8 +53,7 @@ tr{
     text-align: center; /* Zarovnání textu na střed */
     width: 100%; 
     max-width: 1800px; /*Maximální šířka*/
-    margin-left: auto; /* Vycentrování */
-    margin-right: auto; /* Vycentrování */
+    margin: -20px auto  auto; /*mezery nahoře a dole,  centrování */
 }
 
 .menu {
@@ -160,7 +159,7 @@ main {
 }
 
 
-/*styl uživatele*/
+/*styl uživatele, výpis jména uživatele*/
 .user-info {
     text-align: 100;
     position: absolute;
@@ -200,11 +199,15 @@ button:active {
 
 
 
+
 /*responzibilita*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1600px) {
     .user-info{
         display: none;
     }
+}
+
+@media screen and (max-width: 800px) {
     .ekea{
         display:none;
     }
@@ -240,3 +243,4 @@ button:active {
     }
 
 }
+

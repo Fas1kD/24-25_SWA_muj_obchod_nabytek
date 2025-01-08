@@ -1,4 +1,5 @@
 <?php
+echo"<body style='background-color:rgb(166, 223, 223);'>";
 // Start session
 session_start();
 

@@ -44,37 +44,59 @@ session_start();
             die("Chyba připojení: " . $conn->connect_error);
         }
 
+
+        // PRO UŽIVATELE
         // Zpracování formuláře pro odebrání kusu (pouze pro přihlášené uživatele)
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['produkt_ID'])) {
-            if (!isset($_SESSION['username'])) {
-                echo "<p style='color: red;'>Pro nákup musíte být přihlášeni.</p>";
-            } else {
-                $produkt_ID = $_POST['produkt_ID'];
+            $produkt_ID = $_POST['produkt_ID'];
 
-                // SQL dotaz pro snížení počtu kusů, kontrola, aby počet neklesl pod 0
+            // Získání názvu nábytku
+            $sql_nazev = "SELECT nazev_nabytku FROM prodejny WHERE produkt_ID = $produkt_ID";
+            $result_nazev = $conn->query($sql_nazev);
+
+            if ($result_nazev->num_rows > 0) {
+                $row_nazev = $result_nazev->fetch_assoc();
+                $nazev_nabytku = $row_nazev['nazev_nabytku'];
+
+                // SQL dotaz pro snížení počtu kusů
                 $sql = "UPDATE prodejny 
                         SET kusu_na_sklade = kusu_na_sklade - 1 
                         WHERE produkt_ID = $produkt_ID AND kusu_na_sklade > 0";
 
                 if ($conn->query($sql) === TRUE) {
-                    echo "<p style='color: green;'>Počet kusů u produktu s ID $produkt_ID byl úspěšně snížen.</p>";
+                    echo "<p style='color: green;'>Nákup <strong>$nazev_nabytku</strong> (ID: $produkt_ID) byl úspěšně proveden.</p>";
                 } else {
                     echo "<p style='color: red;'>Chyba při aktualizaci: " . $conn->error . "</p>";
                 }
+            } else {
+                echo "<p style='color: red;'>Produkt s ID $produkt_ID nebyl nalezen.</p>";
             }
         }
 
+
+        //PRO ADMINA
         // Zpracování formuláře pro přidání kusu (pouze pro admina)
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_produkt_ID']) && $_SESSION['username'] === 'admin') {
             $produkt_ID = $_POST['add_produkt_ID'];
 
-            // SQL dotaz pro zvýšení počtu kusů
-            $sql = "UPDATE prodejny SET kusu_na_sklade = kusu_na_sklade + 1 WHERE produkt_ID = $produkt_ID";
+            // Získání názvu nábytku
+            $sql_nazev = "SELECT nazev_nabytku FROM prodejny WHERE produkt_ID = $produkt_ID";
+            $result_nazev = $conn->query($sql_nazev);
 
-            if ($conn->query($sql) === TRUE) {
-                echo "<p style='color: green;'>Počet kusů u produktu s ID $produkt_ID byl úspěšně zvýšen.</p>";
+            if ($result_nazev->num_rows > 0) {
+                $row_nazev = $result_nazev->fetch_assoc();
+                $nazev_nabytku = $row_nazev['nazev_nabytku'];
+
+                // SQL dotaz pro zvýšení počtu kusů
+                $sql = "UPDATE prodejny SET kusu_na_sklade = kusu_na_sklade + 1 WHERE produkt_ID = $produkt_ID";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "<p style='color: green;'>Přidání produkt: <strong>$nazev_nabytku</strong> (ID: $produkt_ID) bylo úspěšné.</p>";
+                } else {
+                    echo "<p style='color: red;'>Chyba při aktualizaci: " . $conn->error . "</p>";
+                }
             } else {
-                echo "<p style='color: red;'>Chyba při aktualizaci: " . $conn->error . "</p>";
+                echo "<p style='color: red;'>Produkt s ID $produkt_ID nebyl nalezen.</p>";
             }
         }
 
@@ -91,7 +113,7 @@ session_start();
                         <th>Název nábytku</th>
                         <th>Produkt ID</th>
                         <th>Kusů na skladě</th>
-                        <th>Akce</th>
+                        <th>Nákupy</th>
                       </tr>";
 
                 while ($row = $result->fetch_assoc()) {
@@ -100,10 +122,8 @@ session_start();
                             <td>" . $row["nazev_nabytku"] . "</td>
                             <td>" . $row["produkt_ID"] . "</td>
                             <td>" . $row["kusu_na_sklade"] . "</td>
-                            <td>" . "ahoj" . "</td>
                             <td>";
 
-                    // Zobrazení tlačítka "Koupit" pouze pro přihlášené uživatele
                     if (isset($_SESSION['username'])) {
                         echo "
                             <form method='POST' style='margin: 0; display: inline-block;'>
@@ -112,7 +132,6 @@ session_start();
                             </form>";
                     }
 
-                    // Zobrazení tlačítka "Přidat kus" pouze pro admina
                     if (isset($_SESSION['username']) && $_SESSION['username'] === 'admin') {
                         echo "
                             <form method='POST' style='margin: 0; display: inline-block;'>

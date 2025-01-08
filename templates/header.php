@@ -1,3 +1,5 @@
+<!--Hlavička, nadpis a logo EKEA-->
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
