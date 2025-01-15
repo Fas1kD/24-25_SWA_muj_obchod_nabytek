@@ -42,6 +42,7 @@
 
     <div class="container">
         <h1>Ochrana osobních údajů</h1>
+        <h2>!!!! UPOZORŇUJI ŽE SE JEDNÁ O FIKTIVNÍ STRÁNKU A ŽÁDNÝ Z PRODUKTŮ NEBUDE NIKDY DORUČEN, NEDOPORUČUJEME SE ZDE REGISTROVAT POD SKUTEČNÝM JMÉNEM A POUŽÍVAT NĚKTERÉ Z JIŽ VÁMI UŽÍVANÝCH HESEL !!!!</h2>
         <p>Vaše soukromí je pro nás důležité. Tento dokument popisuje, jakým způsobem shromažďujeme, používáme a chráníme vaše osobní údaje.</p>
 
         <h2>Shromažďované údaje</h2>

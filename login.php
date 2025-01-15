@@ -55,6 +55,8 @@ $conn->close();
     <label for="password">Heslo:</label><br>
     <input type="password" id="password" name="password" required><br><br>
     <input type="submit" value="Přihlásit se">
+    <p>Údaje pro uživatele: Jméno: Vysinkak, heslo: abc</p>
+    <p>Údaje pro admin: Jméno: admin, heslo: admin<p>
 </form>
 
 </body>

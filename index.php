@@ -16,6 +16,9 @@ session_start();
 
 <body style="background-color: #ECECEC;">
 
+<!--Vyskakující okno z alertem-->
+    <script src=".js/script.js"></script>
+
 
 <!--Nadpis-->
     <div class="head">

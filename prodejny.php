@@ -45,6 +45,9 @@ session_start();
         }
 
 
+        echo"<p>.</p>";
+        echo"<p>.</p>";
+
         // PRO UŽIVATELE
         // Zpracování formuláře pro odebrání kusu (pouze pro přihlášené uživatele)
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['produkt_ID'])) {
@@ -151,7 +154,11 @@ session_start();
 
         // Zobrazení produktů pro jednotlivé prodejny
         zobrazProdukty($conn, "Brno");
+        echo"<p>.</p>";
+        echo"<p>.</p>";
         zobrazProdukty($conn, "Praha");
+        echo"<p>.</p>";
+        echo"<p>.</p>";
 
         $conn->close();
         ?>

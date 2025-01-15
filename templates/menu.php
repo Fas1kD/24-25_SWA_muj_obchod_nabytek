@@ -10,16 +10,30 @@
 <body>
     <div class="tlacitka_menu">
         <a href="index.php">Domovská Stránka</a>
-        <a href="prodejny.php">Prodejny</a>
-        <a href="register.php">Registrace</a>
-        <a href="login.php">Přihlášení</a>
+        <a href="prodejny.php" style="margin-right: 100px;">Prodejny</a>
+
+        <!-- !isset(...)... podpínka když nejsem přihlášen-->
+        <?php if (!isset($_SESSION['username'])): ?>
+            <a href="register.php">Registrace</a>
+            <a href="login.php">Přihlášení</a>
+        <?php endif; ?>
+
         <!-- Zobrazení jména uživatele v pravém horním rohu -->
         <?php if (isset($_SESSION['username'])): ?>
             <div class="user-info">
                 Jméno: <?php echo $_SESSION['username']; ?>
             </div>
         <?php endif; ?>
-        <a href="logout.php">Logout</a>
+        
+        <!--Odhlášení, zobrazí se jen když je uživatel přihlášen-->
+        <?php if (isset($_SESSION['username'])): ?>
+            <a href="logout.php">Logout</a>
+        <?php endif; ?>
+
+        <!--změna hesla, zobrazí se jen když je uživatel přihlášen-->
+        <?php if (isset($_SESSION['username'])): ?>
+            <a href="podstranky/change_password.php">Změna hesla</a>
+        <?php endif; ?>
 
     </div>
     
