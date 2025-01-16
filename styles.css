@@ -32,6 +32,8 @@ tr{
 
 
 /*div*/
+
+/*Hlavička (název/logo)*/
 .head {
     margin: -20px auto  auto; /*mezery nahoře a dole,  centrování */
     padding: 15px 20px; 
@@ -56,6 +58,7 @@ tr{
     margin: -20px auto  auto; /*mezery nahoře a dole,  centrování */
 }
 
+/*menu pod headerem*/
 .menu {
     margin: 0 auto 30px auto; /* margin nahoře (0) a dole, centrování vlevo a vpravo */
     padding: 15px 20px; 
@@ -69,6 +72,8 @@ tr{
     top: 0; /* pozice pro pohyb */
     border-radius: 0 0 10px 10px; /* Zaoblené rohy pouze dole */
 }
+
+/*posun linků v menu*/
 .menu_neco {
     margin-left: 100px;
 }
@@ -80,12 +85,13 @@ a:link, a:visited {
     color: white;
     padding: 14px 25px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none; /* Zrušení podtržení textu odkazu */
+    display: inline-block; /* Změna na blokový typ pro přizpůsobení paddingu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Jemný stín pro zvýraznění odkazu */
 
   }
   
+  /* Styl pro linkdy při najetí myší nebo při kliknutí */
   a:hover, a:active {
     color:#c4c4c4;
     background-color:#225560 ;
@@ -101,9 +107,10 @@ a:link, a:visited {
   }
 
 
-/*Uspořádání a styl produktů*/
+    /*Uspořádání a styl produktů*/
 
   /*Oddělení každé položky a vypsání do řádků*/
+  /* jenom produkty mezi sebou*/
   .product_list {
     display: flex;
     gap: 30px;
@@ -111,6 +118,7 @@ a:link, a:visited {
     justify-content: center; /*směrování na střed*/
 }
 
+/*styl pro jednotlivé produkty*/
 .product {
     outline-color: #225560;
     outline-width: 4px;
@@ -121,6 +129,7 @@ a:link, a:visited {
     align-items: center;
 }
 
+/*te bílá část i s textem "prodejce ze švédska"*/
 .polozky{
     max-width: 1600px;
     margin-left: auto;
@@ -131,6 +140,7 @@ a:link, a:visited {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
 }
 
+/*styly pro obrázky produktů*/
 .product img {
     margin: 10px;
     max-width: 400px;
@@ -180,17 +190,18 @@ button:focus {
     margin: 2px;
   font-size: 17px;
   padding: 10px 25px;
-  border-radius: 0.7rem;
-  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border-radius: 0.7rem; /* Zaoblení rohů tlačítka */
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254)); /* Barevný přechod na pozadí tlačítka */
   border: 2px solid rgb(50, 50, 50);
   border-bottom: 5px solid rgb(50, 50, 50);
-  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
-  transform: translate(0, -3px);
-  cursor: pointer;
-  transition: 0.2s;
-  transition-timing-function: linear;
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);/* Jemný stín tlačítka*/
+  transform: translate(0, -3px); /* Tlačítko je lehce "zvednuté" vzhledem k původní poloze */
+  cursor: pointer; /* Změní kurzor na ručičku při najetí na tlačítko */
+  transition: 0.2s; /* Plynulý přechod mezi stavy tlačítka během 0.2 sekundy */
+  transition-timing-function: linear; /* Rovnoměrná rychlost animace */
 }
 
+/*Aktivace tlačítka*/
 button:active {
   transform: translate(0, 0);
   border-bottom: 2px solid rgb(50, 50, 50);
@@ -203,18 +214,18 @@ button:active {
 /*responzibilita*/
 @media screen and (max-width: 1600px) {
     .user-info{
-        display: none;
+        display: none;  /*Při méně jak 1600px zmizí jméno uživatele*/
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {  /*Při méně než 800px proběhnou úpravy*/
     .ekea{
-        display:none;
+        display:none;   /*zmizí logo*/
     }
     .tlacitka_menu{
         display: flex;
+        flex-wrap: wrap; /*Zalomení na řádek pod to při nedostatku místa*/
         gap: 10px;
-        flex-wrap: wrap;
         justify-content: left; /*směrování na střed*/
     }
     /*Upravení headeru na "základní podobu"*/
