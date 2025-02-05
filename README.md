@@ -8,7 +8,7 @@ Uživatelské údaje (jméno a heslo) se ukládají do databáze, lze je i zpět
 
 Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldně pomocí mySQL a PHP zobrazují a po nákapu/doplnění se i aktualizují z databáze na stránce 😊😊😊
 
-## odkaz na stránku [Moje stránka] (https://app.opent2.com/it3a/fasorad/projekt1/index.php)
+## odkaz na stránku [Moje stránka](https://app.opent2.com/it3a/fasorad/projekt1/index.php)
 ***webová stránka se skládá z několika podstránek:***
 
  - **index.php** - hlavní stránka, možnost přejít na ostatní podstránky, prohlédnout si nábytek, přihlášení/registrace, změna hesla/logout
