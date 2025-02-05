@@ -23,9 +23,17 @@ Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldn
  - **PHP** - header, footer, menu - stejné na stránkách, komunikace s databází, formulář, ...
  - **JS** - vyskakovací okno
  - **mySQL** - databáze
+ - **Markdown** - dokumentace na githubu
 
 ***využité technologie:***
- - **Visual studio CODE** - programování
- - **GitHub
+ - **Visual studio CODE** - programování stránky, struktura projektu, realizace projektu
+ - **FTP** - umístění soborů, hosting stránky
+ - **GitHub Desktop** - převedení souborů z počítače do online prostředí
+ - **GitHub** - umístění projektu (soborů)
+ - **.md soubor** - základní dokumentace
+ - **Word** - podrobná dokumentace
+ - **MySQL PhpMyadmin** - databáze
+ - **https://app.opent2.com/it3a/fasorad/projekt1** - umístění projektu
+
 
 
