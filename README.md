@@ -10,7 +10,7 @@ Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldn
 
 ## odkaz na stránku https://app.opent2.com/it3a/fasorad/projekt1/index.php
 
-** webová stránka se skládá z několika podstránek: **
+**webová stránka se skládá z několika podstránek:**
 
 index.php - hlavní stránka
 
