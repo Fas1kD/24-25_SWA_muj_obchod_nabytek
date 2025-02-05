@@ -1,8 +1,8 @@
 # SWA_muj_obchod_nabytek
-## Projekt: Fiktivní obchod s nábytkem
-## odkaz na pdf s podrobným návodem a popisem: [Fasora_Dokumentace](https://1url.cz/s15bC)
+## Projekt: Fiktivní obchod s nábytkem 🏪🪑🫂
+## odkaz na pdf s podrobným návodem a popisem 📋🍿🤓: [Fasora_Dokumentace](https://1url.cz/s15bC)
 
-***Jednoduchá popis:***
+***Jednoduchá popis 📋✏️🥰:***
 
 - Jedná se o fiktivní projekt obchodu s nábytkem EKEA 🖼️🛒🛋️
 
