@@ -12,6 +12,8 @@
 
 - Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldně pomocí mySQL a PHP zobrazují a po nákapu/doplnění se i aktualizují z databáze na stránce 🖥️💾📈
 
+- Stránka je responzivní i na mobilních zařízeních 📲📲📲
+
 ## odkaz na stránku: [EKEA](https://app.opent2.com/it3a/fasorad/projekt1/index.php)
 ***webová stránka se skládá z několika podstránek 🖥️📂📋:***
 
