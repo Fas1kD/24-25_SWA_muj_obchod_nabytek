@@ -15,5 +15,13 @@ Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldn
  - **prodejny.php** - možnost nákupu (možnost pro admina i přidávat kusy na sklad), základní informace o produktech v tabulce
  - **osobni_udaje.php** - stránka se sepsáním ochrany osobních údajů
  - **login.php/register.php** - vytvoření účtu, přihlášení se k účtu
+ - **change_password.php** - změna hesla uživatele
+
+***využité jazyky***
+ - **HTML** - programování webové stránky
+ - **CSS** - styl, vzhled a respozibilita
+ - **PHP** - header, footer, menu - stejné na stránkách, komunikace s databází, formulář, ...
+ - **JS** - vyskakovací okno
+ - **mySQL** - databáze
 
 
