@@ -1,5 +1,5 @@
 # SWA_muj_obchod_nabytek
-## odkaz na pdf s podrobným návodem a popisem: https://1url.cz/s15bC
+## odkaz na pdf s podrobným návodem a popisem: [Fasora_Dokumentace](https://1url.cz/s15bC)
 Jedná se o fiktivní projekt obchodu s nábytkem 😊😊😊
 
 Uživatel se na stránce může přihlásit, vytvořit si účet, změnit si heslo, "fiktivně" a hodně zjednodušeně i nakoupit nějaký nábytek, který se následně odečte z databáze 😊😊😊
@@ -8,7 +8,7 @@ Uživatelské údaje (jméno a heslo) se ukládají do databáze, lze je i zpět
 
 Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldně pomocí mySQL a PHP zobrazují a po nákapu/doplnění se i aktualizují z databáze na stránce 😊😊😊
 
-## odkaz na stránku [Moje stránka](https://app.opent2.com/it3a/fasorad/projekt1/index.php)
+## odkaz na stránku: [EKEA](https://app.opent2.com/it3a/fasorad/projekt1/index.php)
 ***webová stránka se skládá z několika podstránek:***
 
  - **index.php** - hlavní stránka, možnost přejít na ostatní podstránky, prohlédnout si nábytek, přihlášení/registrace, změna hesla/logout
@@ -26,6 +26,6 @@ Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldn
 
 ***využité technologie:***
  - **Visual studio CODE** - programování
- - 
+ - **GitHub
 
 
