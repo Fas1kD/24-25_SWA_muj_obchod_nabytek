@@ -41,7 +41,7 @@
 
 ***Co můžeme dělat na stránce:***
 - přhlášení/registrace
-- dvě úrovně přístupu uživatel/admin
+- dvě úrovně přístupu uživatel/admin (pro údaje pro admina kontaktujte tvůrce projektu)
 - změna hesla/odhlášení se
 - nákup/přidání položky
 - projít si všechny stránka (prodejny, hlavní stránka, ochrana osobních údajů, změna hesla, přihlášení, registrace)
