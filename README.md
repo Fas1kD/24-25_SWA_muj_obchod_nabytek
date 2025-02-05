@@ -39,7 +39,14 @@
  - **MySQL PhpMyadmin** - databáze
  - **https://app.opent2.com/it3a/fasorad/projekt1** - umístění projektu
 
-***Odkazy***
+***Co můžeme dělat na stránce:***
+- přhlášení/registrace
+- dvě úrovně přístupu uživatel/admin
+- změna hesla/odhlášení se
+- nákup/přidání položky
+- projít si všechny stránka (prodejny, hlavní stránka, ochrana osobních údajů, změna hesla, přihlášení, registrace)
+
+***Odkazy:***
 - **[Dokumentace](https://1url.cz/s15bC)**
 - **[Stránka](https://app.opent2.com/it3a/fasorad/projekt1/index.php)**
 - **[Readme](https://app.opent2.com/it3a/fasorad/projekt1/readme.md)**
