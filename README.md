@@ -8,4 +8,6 @@ Uživatelské údaje (jméno a heslo) se ukládají do databáze, lze je i zpět
 
 Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldně pomocí mySQL a PHP zobrazují a po nákapu/doplnění se i aktualizují z databáze na stránce 😊😊😊
 
+## odkaz na stránku https://app.opent2.com/it3a/fasorad/projekt1/index.php
+
 
