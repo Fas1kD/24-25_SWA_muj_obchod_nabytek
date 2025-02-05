@@ -13,6 +13,7 @@ Položky jsou taktéž uložené v databázy a z databáze phpmyadmin se násldn
 
  - **index.php** - hlavní stránka, možnost přejít na ostatní podstránky, prohlédnout si nábytek, přihlášení/registrace, změna hesla/logout
  - **prodejny.php** - možnost nákupu (možnost pro admina i přidávat kusy na sklad), základní informace o produktech v tabulce
- - **
+ - **osobni_udaje.php** - stránka se sepsáním ochrany osobních údajů
+ - **login.php/register.php** - vytvoření účtu, přihlášení se k účtu
 
 
