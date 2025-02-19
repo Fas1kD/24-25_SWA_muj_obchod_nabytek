@@ -2,7 +2,7 @@
 ## Projekt: Fiktivní obchod s nábytkem 🏪🪑🫂
 ## odkaz na pdf s podrobným návodem a popisem 📋🍿🤓: [Fasora_Dokumentace](https://1url.cz/s15bC)
 
-***Jednoduchá popis 📋✏️🥰:***
+***Jednoduchý popis 📋✏️🥰:***
 
 - Jedná se o fiktivní projekt obchodu s nábytkem EKEA 🖼️🛒🛋️
 
