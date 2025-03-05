@@ -30,6 +30,14 @@ tr{
     font-size: 34px;
 }
 
+/*písmo*/
+
+p1{
+    font-size: 32px;
+}
+
+
+
 
 /*div*/
 
@@ -44,6 +52,13 @@ tr{
     text-align: center; 
     width: 100%; 
     max-width: 1800px; /* Maximální šířka pro lepší responsivitu */
+}
+
+.ekea {
+    width: 100%;
+    max-width: 1200px;
+    margin-top:20px;
+    margin-left: -500px;
 }
 
 .footer{
@@ -124,14 +139,14 @@ a:link, a:visited {
     outline-width: 4px;
     outline-style: solid;
     margin: 50px;
-    width: 400px;
+    width: auto;
     text-align: center;
     align-items: center;
 }
 
 /*te bílá část i s textem "prodejce ze švédska"*/
 .polozky{
-    max-width: 1600px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;

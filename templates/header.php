@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="ekea">
-        <img style="position: absolute; top: 25px; left: 100px; width: 150px; height: auto;" alt="Popis obrázku" src="obrazky/ekea2.png">
+        <img style="position: absolute; width: 150px; height: auto;" alt="Popis obrázku" src="obrazky/ekea2.png">
     </div>
     <h1>EKEA</h1>
 </body>

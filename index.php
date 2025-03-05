@@ -41,25 +41,31 @@ session_start();
         <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
 
             <!--samostnatné produkty-->
+
+            <!--Židle-->
             <div class="product">
                 <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_zidle.php';?>
                 </a>
             </div>
 
-
+            <!--Stůl-->
             <div class="product">
                 <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_stolu.php';?>
                 </a>
             </div>
 
+            <!--Polička-->
             <div class="product">
                 <a href="prodejny.php" class="clickable-image">
                     <?php include 'vypisy/vypis_policky.php';?>
                 </a>
             </div>
 
+            <p1>AHOJ</p1>
+
+            <!--lustr-->
             <div class="product">
                 <a href="prodejny.php" class="clickable-image">
                    <?php include 'vypisy/vypis_lustr.php';?>
