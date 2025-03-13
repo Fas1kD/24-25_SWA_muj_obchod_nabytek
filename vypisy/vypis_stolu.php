@@ -22,11 +22,10 @@ if ($result->num_rows > 0){
 
     // Výpis dat z databáze 
     while($row = $result->fetch_assoc()){
-        echo 
-            "<h2>" .$row["nazev_nabytku"]. "</h2>";
-        echo '<img src="obrazky/stul.png" alt="Obrázek produktu" ">';
-        echo "<h3>".$row["Cena"]." Kč</h3>";
+        echo '<img style="width: 250px; height: 400px; margin-bottom: 25px; morgin-top: 20px;" src="obrazky/stul.png" alt="Obrázek produktu" ">';
+        echo "<h4> ---" .$row["nazev_nabytku"]. " --- </h4>";
         echo "<h4>Prodejna: ".$row["prodejna"]."</h4>";
+        echo "<h3>".$row["Cena"]." ,-</h3>";
         }
 }
 

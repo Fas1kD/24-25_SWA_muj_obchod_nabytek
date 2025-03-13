@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="tlacitka_menu">
-        <a href="index.php">Domovská Stránka</a>
-        <a href="prodejny.php" style="margin-right: 100px;">Prodejny</a>
+        <a class="one" href="index.php">Domovská Stránka</a>
+        <a class="one" href="prodejny.php" style="margin-right: 100px;">Prodejny</a>
 
         <!-- !isset(...)... podpínka když nejsem přihlášen-->
         <?php if (!isset($_SESSION['username'])): ?>
-            <a href="register.php">Registrace</a>
-            <a href="login.php">Přihlášení</a>
+            <a class="one" href="register.php">Registrace</a>
+            <a class="one" href="login.php">Přihlášení</a>
         <?php endif; ?>
 
         <!-- Zobrazení jména uživatele v pravém horním rohu -->
@@ -27,12 +27,12 @@
         
         <!--Odhlášení, zobrazí se jen když je uživatel přihlášen-->
         <?php if (isset($_SESSION['username'])): ?>
-            <a href="logout.php">Logout</a>
+            <a class="one" href="logout.php">Logout</a>
         <?php endif; ?>
 
         <!--změna hesla, zobrazí se jen když je uživatel přihlášen-->
         <?php if (isset($_SESSION['username'])): ?>
-            <a href="podstranky/change_password.php">Změna hesla</a>
+            <a class="one" href="podstranky/change_password.php">Změna hesla</a>
         <?php endif; ?>
 
     </div>

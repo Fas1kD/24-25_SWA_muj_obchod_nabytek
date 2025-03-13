@@ -7,6 +7,6 @@
 </head>
 <body>
     <h2>Fasorad | EKEA</h2>
-    <a class="two" href="podstranky/osobni_udaje.php">Ochrana osobních údajů</a>
+    <a class="one" class="two" href="podstranky/osobni_udaje.php">Ochrana osobních údajů</a>
 </body>
 </html>

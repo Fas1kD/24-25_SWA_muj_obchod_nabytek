@@ -11,14 +11,24 @@ h2{
     font-size: 24px;
 }
 
+
+/*Headery na vypis*/
+/*Penize*/
 h3{
-    text-align: center;
+    text-align: left;
     font-size: 36px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px
+
 }
 
+/*popis u vypisu nabytku*/
 h4{
-    text-align: center;
-    font-size: 24px;
+    text-align: left;
+    font-size: 18px;
+    margin: -2px;
+    margin-left: 10px;
 }
 
 /*Tabulka*/
@@ -95,7 +105,7 @@ p1{
 
 /*linky*/
 
-a:link, a:visited {
+a.one:link, a.one:visited {
     background-color: #339999;
     color: white;
     padding: 14px 25px;
@@ -107,7 +117,7 @@ a:link, a:visited {
   }
   
   /* Styl pro linkdy při najetí myší nebo při kliknutí */
-  a:hover, a:active {
+  a.one:hover, a.one:active {
     color:#c4c4c4;
     background-color:#225560 ;
     outline-color:#225560;
@@ -116,7 +126,7 @@ a:link, a:visited {
     
   }
 
-  a.two{
+  a.one{
     color: white;
     background-color: #225560;
   }
@@ -135,9 +145,7 @@ a:link, a:visited {
 
 /*styl pro jednotlivé produkty*/
 .product {
-    outline-color: #225560;
-    outline-width: 4px;
-    outline-style: solid;
+    
     margin: 50px;
     width: auto;
     text-align: center;
@@ -175,7 +183,7 @@ a:link, a:visited {
 }
 
 .clickable-image img:hover {
-    transform: scale(1.2); /* Zvětší obrázek při najetí myší */
+    transform: scale(1.15); /* Zvětší obrázek při najetí myší */
 }
 
 
