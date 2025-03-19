@@ -127,9 +127,32 @@ a.one:link, a.one:visited {
   }
 
   a.one{
-    color: white;
+    color: #80806f;
     background-color: #225560;
+    transition: all 0.3s ease;
   }
+
+
+  a:link, a:visited {
+    background-color: #FFFFDD;
+    color: #80806f;
+    padding: 25px  22px;
+    text-align: center;
+    text-decoration: none; /* Zrušení podtržení textu odkazu */
+    display: inline-block; /* Změna na blokový typ pro přizpůsobení paddingu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Jemný stín pro zvýraznění odkazu */
+    transition: all 0.3s ease;
+  }
+  
+  /* Styl pro linkdy při najetí myší nebo při kliknutí */
+  a:hover, a:active {
+    padding: 32px 32px;
+    color:#FFFFDD;
+    background-color:#339999 ; 
+    transition: all 0.3s ease;
+  }
+
+
 
 
     /*Uspořádání a styl produktů*/
