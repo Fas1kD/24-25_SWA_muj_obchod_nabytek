@@ -42,8 +42,11 @@ tr{
 
 /*písmo*/
 
-p1{
+.textA{
     font-size: 32px;
+    position: sticky;
+    inset: 50px 100px 50px 100px;
+
 }
 
 

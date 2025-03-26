@@ -37,6 +37,9 @@ session_start();
     <!--Produkty-->
     <div class="polozky">
         <p1 style="font-size:32px">Druhý největší prodejce nábytku ze Švédska</p1>
+        <p>
+            <span class="textA">AHOJ</span>
+        </p>
 
         <div class="product_list"> <!--Usporadani produktu do jednoho "místa"-->
 
@@ -62,8 +65,7 @@ session_start();
                     <?php include 'vypisy/vypis_policky.php';?>
                 </a>
             </div>
-
-            <p1>AHOJ</p1>
+            
 
             <!--lustr-->
             <div class="product">

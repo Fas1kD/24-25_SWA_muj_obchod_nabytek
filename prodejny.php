@@ -13,9 +13,7 @@ session_start();
 <body style="background-color: #ECECEC;">
     <!-- Nadpis -->
     <div class="head">
-        <div class="ekea">
-            <img style="position: absolute; top: 25px; left: 100px; width: 150px; height: auto;" alt="Popis obrázku" src="obrazky/ekea2.png">
-        </div>
+        <?php include 'templates/header.php'; ?>
         <h1>PRODEJNY</h1>
     </div>
 
